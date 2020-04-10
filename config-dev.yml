@@ -1,2 +1,18 @@
-config:
-  info:master branch,springcloud-config/config-dev.yml version=1
+server:
+  port: 9001
+
+spring:
+  application:
+    name: cloud-turbine-server
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+
+
+
+
